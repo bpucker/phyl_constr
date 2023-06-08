@@ -43,13 +43,13 @@ optional:
 
 `--mafft` specifies the full path to the MAFFT binary. This variable can be used if MAFFT is not accessbile through your PATH variable. Default: mafft.
 
-`--minsim` specifies an output folder. This folder will be created if it does not exist already.
+`--minsim` specifies the minimal similarity of a BLAST hit to be considered in the following analysis. Default: 80.0.
 
-`--minlen` specifies an output folder. This folder will be created if it does not exist already.
+`--minlen` specifies the minimal length of a BLAST hit to be considered in the following analysis. Default: 50.
 
-`--repratio` specifies an output folder. This folder will be created if it does not exist already.
+`--repratio` specifies the number of species that need to contribute an ortholog to a set of sequences. Only sets of orthologous sequences with a sufficient ratio of representated species are considered for the phylogenetic tree construction. Default: 1.0 (all).
 
-`--occupancy` specifies an output folder. This folder will be created if it does not exist already.
+`--occupancy` specifies the minimal alignment occupancy. This determines which columns will be removed during the alignment trimming step. Default: 0.1.
 
 ## References
 This repository.
