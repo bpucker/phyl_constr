@@ -1,5 +1,23 @@
 # phyl_constr
-construction of species tree based on large sequence data sets
+This repository provides the ncessary scripts to construct a species tree based on large sequence data sets of a number of different species. The tree will show the phylogenetic relationships of these species.
+
+## Get single copy BUSCOs ###
+This script extracts all BUSCOs that are present with exactly one copy from a given BUSCO run result folder.
+
+```
+python3 get_single_copy_BUSCOs.py --busco <FILE> --pepin <FILE> --pepout <FILE>
+
+Arguments:
+--busco        STR    BUSCO result TSV file
+--pepin        STR    Peptide input file
+--pepout       STR    Peptide output file
+```
+
+`--busco` specifies the central BUSCO result file (TSV). This file provides the IDs of single copy orthologs in the given species. IDs in this file need to match the provided peptide sequence input file.
+
+`--pepin` specifies the polypeptide sequence input file (FASTA). The sequences of single copy ortholog IDs will be retrieved from this file.
+
+`--pepout` specifies the polypeptide sequence output file (FASTA). The sequences of single copy ortholog IDs will be written into this file.
 
 
 ## Phylogenetic tree constructor ##
