@@ -8,13 +8,13 @@
 
 __cite__ = """Pucker, B., 2023. xxx"""
 
-__version__ = "v0.1"
+__version__ = "v0.11"
 
 __usage__ = """
 					Construction of species tree (""" + __version__ + """
 					python3 phyl_constr.py
-					--baits <MYB_SEQ_FILE>
-					--in <MYB_CLASSIFICATION_FILE>
+					--baits <BAIT_SEQ_FILE>
+					--in <CONFIG_INPUT_FILE>
 					--out <OUTPUT_DIR>
 					
 					optional:
